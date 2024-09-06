@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1SNx4ZF6qJ2YVq9PAhDOZUhjuSFwbo56d
 """
 
-!pip install mediapipe
+# !pip install mediapipe
 
 from google.colab.patches import cv2_imshow
 import mediapipe as mp
