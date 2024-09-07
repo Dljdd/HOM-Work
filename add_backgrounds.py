@@ -5,10 +5,10 @@ def add_background_and_lighting(input_folder, background_folder, output_folder):
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
-    backgrounds = [f for f in os.listdir(background_folder) if f.lower().endswith(('.png', '.jpg', '.jpeg'))]
+    backgrounds = [f for f in os.listdir(background_folder) if f.lower().endswith(('.png', '.jpg', '.jpeg', '.webp'))]
     
     for filename in os.listdir(input_folder):
-        if filename.lower().endswith(('.png', '.jpg', '.jpeg')):
+        if filename.lower().endswith('.webp'):
             input_path = os.path.join(input_folder, filename)
             foreground = Image.open(input_path).convert("RGBA")
 
@@ -34,14 +34,13 @@ def add_background_and_lighting(input_folder, background_folder, output_folder):
 
             # Save the result
             output_path = os.path.join(output_folder, f"final_{filename}")
-            composite = composite.convert("RGB")  # Convert to RGB for saving as JPEG
-            composite.save(output_path, "JPEG", quality=95)
+            composite.save(output_path, "WEBP", quality=95)
             print(f"Processed: {filename}")
 
     print("Background and lighting effects added. Check the output folder for results.")
 
-# Usage
-input_folder = 'outputs'  # Folder with background-removed images
-background_folder = '/path/to/background/images'
-output_folder = 'final_outputs'
+# Example usage
+input_folder = './outputs'  # Folder with background-removed images
+background_folder = './backgrounds'
+output_folder = './final_outputs'
 add_background_and_lighting(input_folder, background_folder, output_folder)
