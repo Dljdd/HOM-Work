@@ -19,3 +19,13 @@ https://github.com/XLabs-AI/x-flux?tab=readme-ov-file
 ### Flux via Comfy Ui
 
 https://github.com/XLabs-AI/x-flux-comfyui
+
+
+CharacterGen Comfyui
+
+https://docs.google.com/document/d/1Hjf1LwpEy2KVmKb0TU4cjkzIofdi6tCP7qI7Sr6NtZs/edit?tab=t.0
+
+
+https://www.patreon.com/collection/330449?view=expanded
+
+https://www.patreon.com/posts/create-from-with-115147229
